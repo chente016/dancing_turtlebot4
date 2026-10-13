@@ -1,0 +1,9 @@
+# Deliberately wrong file: run the checker on it to see the error messages.
+first_measure,last_measure,step,angle_deg,radius_m
+1,,forward,,
+2,,turn_left,120,
+3,,forward,45,
+7,,circle_left,45,0.4
+12,,forward,,
+8,9,hop,,
+9,,turn_right,,

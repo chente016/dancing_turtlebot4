@@ -1,0 +1,12 @@
+# Example choreography. Lines starting with '#' are comments.
+# One row per move. last_measure blank = a single measure.
+# Measures that are not listed are rests (the robot stays still).
+first_measure,last_measure,step,angle_deg,radius_m
+1,,forward,,
+2,3,turn_left,90,
+4,,forward,,
+5,,circle_right,45,0.4
+6,,turn_right,45,
+7,,backward,,
+9,,circle_left,30,
+10,,turn_left,90,
