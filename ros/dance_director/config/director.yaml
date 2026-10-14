@@ -1,0 +1,14 @@
+# Example parameters. Edit the paths (YAML does not expand ~) and the robot list.
+dance_director:
+  ros__parameters:
+    timetable_csv: /home/hass/dancing_turtlebot4/examples/timetable.csv
+    dancers: [donatello]        # one entry per robot namespace
+    publish_rate_hz: 20.0
+    cmd_vel_topic: cmd_vel      # published on /<dancer>/<cmd_vel_topic>
+    start_tolerance_s: 0.5
+    zero_burst_ticks: 5
+    gap_warn_s: 0.25
+    # One block per dancer, named exactly like the entry in `dancers`.
+    donatello:
+      choreography_csv: /home/hass/dancing_turtlebot4/examples/choreography.csv
+      music_start_offset: 0.0   # seconds; negative = send earlier (tuned per robot)

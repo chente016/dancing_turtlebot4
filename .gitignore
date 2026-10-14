@@ -8,7 +8,10 @@ wheels/
 
 # Virtual environments
 .venv
+clean_env.sh
+.vscode
 
 # Outputs
 tests/output/
 output/
+

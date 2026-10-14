@@ -1,0 +1,15 @@
+# StartDance.srv  (package dance_interfaces)
+#
+# Called by the orchestrator on the director's schedule_start service, after the
+# director has been armed. It says WHEN song t = 0 happens.
+#
+# Request
+# Absolute time, on the ROS clock, at which song t = 0 happens (e.g. now + 5 s).
+# Repeating the SAME value is acknowledged again; a different value is refused.
+builtin_interfaces/Time start_time
+---
+# Response
+# true  = every robot is scheduled for that start time
+# false = nothing was scheduled; `message` says why (the orchestrator should abort)
+bool success
+string message
